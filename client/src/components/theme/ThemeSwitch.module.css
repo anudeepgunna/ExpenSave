@@ -1,0 +1,31 @@
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+.dark {
+  @mixin dark {
+    display: none;
+  }
+
+  @mixin light {
+    display: block;
+    color: hsl(0, 0%, 20%);
+    fill: hsl(0, 0%, 20%);
+ 
+    
+  }
+}
+
+.light {
+  @mixin light {
+    display: none;
+  }
+
+  @mixin dark {
+    display: block;
+       color:orange;
+    fill:orange
+    
+  }
+}
